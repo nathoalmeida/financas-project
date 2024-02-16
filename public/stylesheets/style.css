@@ -28,7 +28,7 @@ a {
 }
 
 .dvBusca {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .dvBusca div, .dvBusca form input, .dvBusca form button {
@@ -52,3 +52,6 @@ a {
   text-align: right;
 }
 
+.dvTabela {
+  margin-top: 30px;
+}

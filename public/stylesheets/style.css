@@ -6,3 +6,26 @@ body {
 a {
   color: #00B7FF;
 }
+
+.dvCaixasValores {
+  width: 100%;
+  text-align: center;
+}
+.dvCaixasValores div {
+  display: inline-block;
+  text-align: left;
+  background-color: beige;
+  width: 22%;
+  padding: 20px;
+}
+
+.dvCaixasValores div:nth-child(2) {
+  background-color: aquamarine;
+}
+.dvCaixasValores div:nth-child(3) {
+  background-color: red;
+}
+
+.dvSearch {
+  margin-top: 20 px;
+}

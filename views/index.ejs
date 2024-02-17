@@ -12,19 +12,19 @@
     <div class="dvCaixasValores">
       <div>
         <b>Saldo Inicial</b> <br>
-        R$ xxx
+        R$ <%= saldoInicial %>
       </div>
       <div>
         <b>Receitas</b><br>
-        R$ xxx
+        R$ <%= receitas %>
       </div>
       <div>
         <b>Despesas</b><br>
-        R$ xxx
+        R$ <%= despesas %>
       </div>
       <div>
         <b>Saldo final</b><br>
-        R$ xxxx
+        R$ <%= valorTotal %>
       </div>
     </div>
 
@@ -47,28 +47,17 @@
             <th>Nome</th>
             <th>Valor</th>
             <th>Tipo</th>
-            <th></th> <!-- Coluna vazia -->
+            <th></th> 
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Item 1</td>
-            <td>R$ 10,00</td>
-            <td>Despesa</td>
-            <td></td> <!-- Coluna vazia -->
-          </tr>
-          <tr>
-            <td>Item 2</td>
-            <td>R$ 20,00</td>
-            <td>Receita</td>
-            <td></td> <!-- Coluna vazia -->
-          </tr>
-          <tr>
-            <td>Item 3</td>
-            <td>R$ 30,00</td>
-            <td>Receita</td>
-            <td></td> <!-- Coluna vazia -->
-          </tr>
+            <tr>
+              <td><%= financas.nome %></td>
+              <td>R$ <%= financas.valor %></td>
+              <td><%= financas.tipo %></td>
+              <td></td> 
+            </tr>
+         
         </tbody>
       </table>
     </div>

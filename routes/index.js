@@ -1,9 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const Financas = require('../models/financas'); // Importa o modelo Financas
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index');
+router.get('/', async function(req, res, next) {
+  try {
+    const financas = await Financas.findAll(); 
+    res.render('index', { financas: financas });
+  } catch (error) {
+    console.error('Erro ao recuperar dados do banco de dados:', error);
+    res.status(500).send('Erro ao recuperar dados do banco de dados');
+  }
 });
 
 module.exports = router;
